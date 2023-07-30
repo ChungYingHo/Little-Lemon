@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import Img  from '../asset/icons/restauranfood.jpg'
+import Btn from './Btn'
 
 const StyledBanner = styled.section`
     background-color: #495e57;
 `
 
 const StyledContainer = styled.div`
-    outline: red solid 2px;
+    /* outline: red solid 2px; */
     width: 66%;
     height: 300px;
     margin: 0 auto;
@@ -16,7 +17,7 @@ const StyledContainer = styled.div`
 `
 
 const StyledText = styled.div`
-    outline: blue solid 2px;
+    /* outline: blue solid 2px; */
     grid-column: 1/2;
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@ const StyledText = styled.div`
 `
 
 const StyledTitle = styled.h1`
-    outline: green solid 2px;
+    /* outline: green solid 2px; */
     font-family: 'Markazi Text', serif;
     font-size: 40px;
     color: rgb(244, 206, 20);
@@ -49,7 +50,7 @@ const StyledInfo = styled.p`
 const StyledImg = styled.section`
     background-image: url(${Img});
     background-size: cover;
-    width: 325px;
+    width: 350px;
     height: 375px;
     border-radius: 16px;
     position: absolute;
@@ -65,6 +66,7 @@ export default function Banner(){
                     <StyledTitle>Little Lemon</StyledTitle>
                     <StyledSubTitle>Chicago</StyledSubTitle>
                     <StyledInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut tellus elementum sagittis vitae et. </StyledInfo>
+                    <Btn name={'Reserve a Table'}/>
                 </StyledText>
                 <StyledImg/>
             </StyledContainer>

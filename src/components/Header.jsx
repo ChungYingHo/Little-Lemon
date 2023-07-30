@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import { ReactComponent as Brand } from '../asset/icons/Logo.svg'
 
 const StyledHeader = styled.header`
-    outline: red solid 2px;
+    /* outline: red solid 2px; */
 `
 
 const StyledNav = styled.nav`
-    outline: blue solid 3px;
+    /* outline: blue solid 3px; */
     width: 66%;
     margin: 0 auto;
     display: grid;
@@ -14,13 +14,13 @@ const StyledNav = styled.nav`
 `
 
 const StyledBrand = styled(Brand)`
-    outline: yellow solid 2px;
+    /* outline: yellow solid 2px; */
     grid-column: 1/2;
     margin: 1.5rem auto;
 `
 
 const StyledList = styled.ul`
-    outline: green solid 2px;
+    /* outline: green solid 2px; */
     grid-column: 2/6;
     display: flex;
     justify-content: space-around;
@@ -29,7 +29,7 @@ const StyledList = styled.ul`
 `
 
 const StyledListItem = styled.li`
-    outline: red solid 2px;
+    /* outline: red solid 2px; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ const StyledListItem = styled.li`
 `
 
 const StyledLink = styled.a`
-    outline: blue solid 2px;
+    /* outline: blue solid 2px; */
     text-decoration: none;
     font-family: 'Karla', sans-serif;
     font-size: 1rem;

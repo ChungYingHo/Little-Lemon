@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Img  from '../asset/icons/restauranfood.jpg'
 import Btn from './Btn'
+import { Link } from 'react-router-dom'
 
 const StyledBanner = styled.section`
     background-color: #495e57;
@@ -66,7 +67,7 @@ export default function Banner(){
                     <StyledTitle>Little Lemon</StyledTitle>
                     <StyledSubTitle>Chicago</StyledSubTitle>
                     <StyledInfo>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut tellus elementum sagittis vitae et. </StyledInfo>
-                    <Btn name={'Reserve a Table'}/>
+                    <Link to='/reserve'><Btn name={'Reserve a Table'}/></Link>
                 </StyledText>
                 <StyledImg/>
             </StyledContainer>

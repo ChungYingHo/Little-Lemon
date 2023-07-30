@@ -88,6 +88,8 @@ const StyledImg1 = styled.img`
     position: absolute;
     top: 5%;
     right: 5%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 `
 
 const StyledImg2 = styled.img`
@@ -98,6 +100,8 @@ const StyledImg2 = styled.img`
     position: absolute;
     bottom: 5%;
     right: 25%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 `
 
 export default function Main(){

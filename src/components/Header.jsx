@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { ReactComponent as Brand } from '../asset/icons/Logo.svg'
+import { Link } from 'react-router-dom'
 
 const StyledHeader = styled.header`
     /* outline: red solid 2px; */
@@ -36,7 +37,7 @@ const StyledListItem = styled.li`
     justify-content: center;
 `
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
     /* outline: blue solid 2px; */
     text-decoration: none;
     font-family: 'Karla', sans-serif;
@@ -51,12 +52,12 @@ export default function Header(){
             <StyledNav>
                 <StyledBrand/>
                 <StyledList>
-                    <StyledListItem><StyledLink href='#'>Home</StyledLink></StyledListItem>
-                    <StyledListItem><StyledLink href='#'>About</StyledLink></StyledListItem>
-                    <StyledListItem><StyledLink href='#'>Menu</StyledLink></StyledListItem>
-                    <StyledListItem><StyledLink href='#'>Reservations</StyledLink></StyledListItem>
-                    <StyledListItem><StyledLink href='#'>Order Online</StyledLink></StyledListItem>
-                    <StyledListItem><StyledLink href='#'>Login</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to='*'>Home</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to='#'>About</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to='#'>Menu</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to='/reserve'>Reservations</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to='#'>Order Online</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to='#'>Login</StyledLink></StyledListItem>
                 </StyledList>
             </StyledNav>
         </StyledHeader>

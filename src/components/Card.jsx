@@ -20,8 +20,10 @@ const StyledImg = styled.img`
 
 const StyledInfo = styled.div`
     width: 80%;
+    height: 60%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 `
 
@@ -52,6 +54,8 @@ const StyledLink = styled.a`
     text-decoration: none;
     color: black;
     font-weight: 700;
+    text-align: left;
+    margin-bottom: 5px;
 `
 
 

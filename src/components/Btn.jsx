@@ -7,6 +7,7 @@ const StyledBtn = styled.button`
     padding: 10px 15px;
     cursor: pointer;
     font-weight: 700;
+    height: 40px;
 `
 
 export default function Btn({name}){

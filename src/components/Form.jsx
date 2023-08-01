@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Btn from './Btn'
-import { useState } from 'react'
 
 const StyledMain = styled.main`
     /* outline: blue solid 2px; */
@@ -65,23 +64,7 @@ const StyledSelect = styled.select`
 
 
 
-export default function Form(){
-    const [info, setInfo] = useState({
-      date: '',
-      time: '17:00',
-      guests: '1',
-      occasion: 'Birthday'
-    })
-
-    const handleChange = (e)=>{
-      const {name, value} = e.target
-      setInfo((prevInfo) => ({ ...prevInfo, [name]: value }))
-    }
-
-    const handleSubmit = ()=>{
-        alert(`Date:${info.date}\nTime:${info.time}\nGuests:${info.guests}\nOccasion${info.occasion}`)
-    }
-
+export default function Form({onChange, onClick, availableTimes}){
     return(
         <StyledMain>
             <StyledContainer>
@@ -89,32 +72,31 @@ export default function Form(){
                 <StyledForm>
                   <StyledGroup>
                     <StyledLabel htmlFor="res-date">Choose date</StyledLabel>
-                    <StyledInput type="date" id="res-date" name='date' lang="en" onChange={handleChange}/>
+                    <StyledInput type="date" id="res-date" name='date' lang="en" onChange={onChange}/>
                   </StyledGroup>
                   <StyledGroup>
                     <StyledLabel htmlFor="res-time">Choose time</StyledLabel>
-                    <StyledSelect id="res-time" name='time' onChange={handleChange}>
-                        <option>17:00</option>
-                        <option>18:00</option>
-                        <option>19:00</option>
-                        <option>20:00</option>
-                        <option>21:00</option>
-                        <option>22:00</option>
+                    <StyledSelect id="res-time" name='time' onChange={onChange}>
+                        {availableTimes.map((time) => (
+                          <option key={time} value={time}>
+                            {time}
+                          </option>
+                        ))}
                     </StyledSelect>
                   </StyledGroup>
                   <StyledGroup>
                     <StyledLabel htmlFor="guests">Number of guests</StyledLabel>
-                    <StyledInput type="number" placeholder="1" min="1" max="10" id="guests" name='guests' onChange={handleChange}/>
+                    <StyledInput type="number" placeholder="1" min="1" max="10" id="guests" name='guests' onChange={onChange}/>
                   </StyledGroup>
                   <StyledGroup>
                     <StyledLabel htmlFor="occasion">Occasion</StyledLabel>
-                    <StyledSelect id="occasion" name='occasion' onChange={handleChange}>
+                    <StyledSelect id="occasion" name='occasion' onChange={onChange}>
                         <option>Birthday</option>
                         <option>Anniversary</option>
                     </StyledSelect>
                   </StyledGroup>
                 </StyledForm>
-                <Btn name={'Make Your Reservation'} onClick={handleSubmit}/>
+                <Btn name={'Make Your Reservation'} onClick={onClick}/>
             </StyledContainer>
         </StyledMain>
     )

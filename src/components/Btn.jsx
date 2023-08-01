@@ -8,10 +8,16 @@ const StyledBtn = styled.button`
     cursor: pointer;
     font-weight: 700;
     height: 40px;
+    width: fit-content;
+
+    &:active {
+    box-shadow: 0 2px 4px rgba(244, 206, 20, 0.5);
+    transform: translateY(2px);
+  }
 `
 
-export default function Btn({name}){
+export default function Btn({name, onClick}){
     return(
-        <StyledBtn>{name}</StyledBtn>
+        <StyledBtn onClick={onClick}>{name}</StyledBtn>
     )
 }

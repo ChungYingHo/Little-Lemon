@@ -3,7 +3,7 @@ import { ReactComponent as Brand } from '../asset/icons/Logo .svg'
 
 const StyledFooter = styled.footer`
     height: 25vh;
-    background-color: gray;
+    background-color: #edefee;
     margin-top: 4rem;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;

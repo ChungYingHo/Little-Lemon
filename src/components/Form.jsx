@@ -64,7 +64,8 @@ const StyledSelect = styled.select`
 
 
 
-export default function Form({onChange, onClick, availableTimes}){
+export default function Form({onChange, onClick}){
+    const times = ['17:00', '18:00', '19:00', '20:00']
     return(
         <StyledMain>
             <StyledContainer>
@@ -77,7 +78,7 @@ export default function Form({onChange, onClick, availableTimes}){
                   <StyledGroup>
                     <StyledLabel htmlFor="res-time">Choose time</StyledLabel>
                     <StyledSelect id="res-time" name='time' onChange={onChange}>
-                        {availableTimes.map((time) => (
+                        {times.map((time) => (
                           <option key={time} value={time}>
                             {time}
                           </option>

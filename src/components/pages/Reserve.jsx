@@ -21,29 +21,10 @@ export default function Reserve(){
         alert(`Date:${info.date}\nTime:${info.time}\nGuests:${info.guests}\nOccasion${info.occasion}`)
     }
 
-    // change the available times
-    const [availableTimes, setAvailableTimes] = useState(['17:00', '18:00'])
-    const updatedTimes = (prevTimes)=>{
-        setAvailableTimes([...prevTimes, '19:00'])
-    }
-
-    // set the api
-    useEffect(() => {
-    import('https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js')
-      .then((module) => {
-        // 在這裡可以使用 api.js 中的功能
-        module.fetchData();
-        // ...其他程式碼
-      })
-      .catch((error) => {
-        console.error('Failed to load api.js:', error);
-      });
-    }, [])
-
     return(
         <>
             <Header/>
-            <Form onChange={handleChange} onClick={handleSubmit} availableTimes={availableTimes}/>
+            <Form onChange={handleChange} onClick={handleSubmit}/>
             <Footer/>
         </>
     )

@@ -72,30 +72,30 @@ export default function Footer(){
                 <StyledGroup>
                     <StyledTitle>Infomation</StyledTitle>
                     <StyledList>
-                        <StyledListItem><StyledLink>Home</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>About</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>Menu</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>F&Q</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Home</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>About</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Menu</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>F&Q</StyledLink></StyledListItem>
                     </StyledList>
                 </StyledGroup>
 
                 <StyledGroup>
                     <StyledTitle>Service</StyledTitle>
                     <StyledList>
-                        <StyledListItem><StyledLink>Delivery</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>Reservation</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>Service3</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>Service4</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Delivery</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Reservation</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Service3</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Service4</StyledLink></StyledListItem>
                     </StyledList>
                 </StyledGroup>
 
                 <StyledGroup>
                     <StyledTitle>Contact</StyledTitle>
                     <StyledList>
-                        <StyledListItem><StyledLink>Phone</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>Email</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>Instagram</StyledLink></StyledListItem>
-                        <StyledListItem><StyledLink>Address</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Phone</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Email</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Instagram</StyledLink></StyledListItem>
+                        <StyledListItem><StyledLink href='#'>Address</StyledLink></StyledListItem>
                     </StyledList>
                 </StyledGroup>
             </StyledContainer>

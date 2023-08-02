@@ -1,7 +1,7 @@
 import Header from '../Header';
 import Footer from '../Footer';
 import Form from '../Form';
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Reserve(){
     // the state and function for storage and change the input value

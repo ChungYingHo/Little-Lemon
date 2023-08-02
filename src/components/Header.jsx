@@ -31,10 +31,21 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
     /* outline: red solid 2px; */
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5px 10px;
+    border-radius: 16px;
+
+    &:hover{
+        background-color: rgb(244, 206, 20);
+    }
+
+    &:active {
+    box-shadow: 0 2px 4px rgba(244, 206, 20, 0.5);
+    transform: translateY(2px);
+  }
 `
 
 const StyledLink = styled(Link)`
@@ -52,9 +63,9 @@ export default function Header(){
             <StyledNav>
                 <StyledBrand/>
                 <StyledList>
-                    <StyledListItem><StyledLink to='*'>Home</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to='/home'>Home</StyledLink></StyledListItem>
                     <StyledListItem><StyledLink to='#'>About</StyledLink></StyledListItem>
-                    <StyledListItem><StyledLink to='#'>Menu</StyledLink></StyledListItem>
+                    <StyledListItem><StyledLink to='/menu'>Menu</StyledLink></StyledListItem>
                     <StyledListItem><StyledLink to='/reserve'>Reservations</StyledLink></StyledListItem>
                     <StyledListItem><StyledLink to='#'>Order Online</StyledLink></StyledListItem>
                     <StyledListItem><StyledLink to='#'>Login</StyledLink></StyledListItem>

@@ -1,5 +1,6 @@
 # Little Lemon Restaurant Website
-I am simulating the existence of a new restaurant - Little Lemon, which has recently opened in Chicago, and it requires a website to showcase its restaurant content or enable online reservations. This React project aims to build such a restaurant website.
+I am simulating the existence of a new restaurant - Little Lemon, which has recently opened in Chicago, and it requires a website to showcase its restaurant content or enable online reservations. This React project aims to build such a restaurant website. <br>
+You can view the website on following URL: **https://chungyingho.github.io/Little-Lemon/**
 ### Diagram
 ![Home Page](./public/screenshot1.png)
 ### Features
